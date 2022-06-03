@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/mainpagestyle.css">
+        <title>Movie Picker</title>
+        <link rel="shortcut icon" href="/resources/popcorn.png">
+    </head>
+<body>
+    <header>
+        <a href="/html/mainpage.html">
+        <img class="logo" src="/resources/popcorn.png" alt="logo">
+        <h4>MoviePicker</h4>
+        </a>
+        <nav>
+            <div class="topnav">
+                <div class="dropdown">
+                    <button class="dropbtn">Genres 
+                      <i class="arrow down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="/html/actionpage.html">Action</a>
+                      <a href="/html/comedypage.html">Comedy</a>
+                      <a href="/html/dramapage.html">Drama</a>
+                      <a href="/html/fantasypage.html">Fantasy</a>
+                      <a href="/html/horrorpage.html">Horror</a>
+                      <a href="/html/romancepage.html">Romance</a>
+                      <a href="/html/sfpage.html">SF</a>
+                      <a href="/html/thrillerpage.html">Thriller</a>
+                    </div>
+                  </div> 
+                <a href="/html/signuppage.html">Sign Up</a>
+                <a href="/html/loginpage.html">Log In</a>
+                <a href="/html/contactpage.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="grid-container">
+        <div class="quiz-area">
+            <h2>MOVIE RECOMMENDATIONS</h2>
+            <br>
+            <p>Can't decide what movie to watch? Answer these </p>
+            <p>questions and let us recommend you a movie!</p>
+            <a href="/html/startquizpage.html">
+                <button class="start-btn">Start Now</button>
+            </a>
+        </div>
+
+        <div class="slideshow-area">
+            <div class="slideshow-border">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img class="posters" src="/resources/poster1.webp">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img class="posters" src="/resources/poster2.jpg">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img class="posters"src="/resources/poster3.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="posters" src="/resources/poster4.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="posters" src="/resources/poster5.jpg">
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+        </script>
+
+</body>
+</html>

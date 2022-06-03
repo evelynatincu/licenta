@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/contactpagestyle.css">
+        <title>Movie Picker</title>
+        <link rel="shortcut icon" href="/resources/popcorn.png">
+    </head>
+<body>
+    <header>
+        <a href="/html/mainpage.html">
+        <img class="logo" src="/resources/popcorn.png" alt="logo">
+        <h4>MoviePicker</h4>
+        </a>
+        <nav>
+            <div class="topnav">
+                <div class="dropdown">
+                    <button class="dropbtn">Genres 
+                      <i class="arrow down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="/html/actionpage.html">Action</a>
+                      <a href="/html/comedypage.html">Comedy</a>
+                      <a href="/html/dramapage.html">Drama</a>
+                      <a href="/html/fantasypage.html">Fantasy</a>
+                      <a href="/html/horrorpage.html">Horror</a>
+                      <a href="/html/romancepage.html">Romance</a>
+                      <a href="/html/sfpage.html">SF</a>
+                      <a href="/html/thrillerpage.html">Thriller</a>
+                    </div>
+                  </div> 
+                <a href="/html/signuppage.html">Sign Up</a>
+                <a href="/html/loginpage.html">Log In</a>
+                <a href="/html/contactpage.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <h2>Contact Us</h2>
+        <br>
+        <p>Please fill in the form below</p>
+    </div>
+
+    <div class="box inputs">
+        <form>
+            <div class="name">
+                <label for="firstname">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Your first name...">
+            </div>
+            <div class="name">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Your last name...">
+            </div>
+
+            <div class="details">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" placeholder="Your e-mail...">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Austria</option>
+                <option value="canada">Belgium</option>
+                <option value="canada">Canada</option>
+                <option value="canada">Croatia</option>
+                <option value="canada">France</option>
+                <option value="canada">Germany</option>
+                <option value="canada">Greece</option>
+                <option value="canada">Italy</option>
+                <option value="canada">Netherlands</option>
+                <option value="canada">Romania</option>
+                <option value="canada">Spain</option>
+                <option value="canada">Sweden</option>
+                <option value="canada">Turkey</option>
+                <option value="canada">UK</option>
+                <option value="usa">USA</option>
+            </select>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write message..." class="message-box"></textarea>
+            </div>
+            <button class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+
+
+</body>
+</html>
